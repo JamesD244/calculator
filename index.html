@@ -22,12 +22,12 @@
     <div class=wrapper>
       <div class="section section1">
         <div class="bill">
-          <text>Bill</text>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <text id=billError class=bill-error>Can't be zero</text>
-          <input id=billInput type=text placeholder=0>
+          <span>Bill</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <span id=billError class=bill-error>Can't be zero</span>
+          <input id=billInput type=span placeholder=0>
         </div>
         <div class="tip flex">
-          <text>Select Tip %</text>
+          <span>Select Tip %</span>
           <div class=tip-amounts>
             <button id=btn1>5%</button>
             <button id=btn2>10%</button>
@@ -39,26 +39,26 @@
         </div>
         <div class="people flex">
           <div>
-            <text>Number of People</text>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <text id=peopleError class=people-error>Can't be zero</text>
+            <span>Number of People</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <span id=peopleError class=people-error>Can't be zero</span>
           </div>
-          <input type=text id=peopleInput placeholder=0>
+          <input type=span id=peopleInput placeholder=0>
         </div>
       </div>
 
       <div class="section section2">
         <div class="tip-amount">
           <div>
-            <text>Tip Amount</text> <br>
-            <text style="color: gray">/ person</text>
+            <span>Tip Amount</span> <br>
+            <span style="color: gray">/ person</span>
           </div>
           <input id=tipAmount placeholder=$0.00 readonly >
         </div>
 
         <div class=tip-total>
           <div>
-            <text>Total</text><br>
-            <text style="color: gray">/ person</text>
+            <span>Total</span><br>
+            <span style="color: gray">/ person</span>
           </div>
           <input id=tipTotal placeholder=$0.00 readonly >
         </div>
@@ -75,5 +75,5 @@
     Coded by <a href="#">James Daff</a>.
   </div>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script type="span/javascript" src="script.js"></script>
 </html>
