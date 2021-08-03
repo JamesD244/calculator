@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <title>Frontend Mentor | Tip calculator app</title>
+    <title>Tip Calculator</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
 
-  <div class=page-wrapper>
-    <div class=wrapper>
-      <div class="section section1">
-        <div class="bill">
-          <span>Bill</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <span id=billError class=bill-error>Can't be zero</span>
-          <input id=billInput type=text placeholder=0>
-        </div>
-        <div class="tip flex">
-          <span>Select Tip %</span>
-          <div class=tip-amounts>
-            <button id=btn1>5%</button>
-            <button id=btn2>10%</button>
-            <button id=btn3>15%</button>
-            <button id=btn4>25%</button>
-            <button id=btn5>50%</button>
-            <input id=btn6 class=custom placeholder="Custom">
+    <div class=page-wrapper>
+      <div class=wrapper>
+        <div class="section section1">
+          <div class="bill">
+            <span>Bill</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <span id=billError class=bill-error>Can't be zero</span>
+            <input id=billInput type=text placeholder=0>
+          </div>
+          <div class="tip flex">
+            <span>Select Tip %</span>
+            <div class=tip-amounts>
+              <button id=btn1>5%</button>
+              <button id=btn2>10%</button>
+              <button id=btn3>15%</button>
+              <button id=btn4>25%</button>
+              <button id=btn5>50%</button>
+              <input id=btn6 class=custom placeholder="Custom">
+            </div>
+          </div>
+          <div class="people flex">
+            <div>
+              <span>Number of People</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span id=peopleError class=people-error>Can't be zero</span>
+            </div>
+            <input type=text id=peopleInput placeholder=0>
           </div>
         </div>
-        <div class="people flex">
-          <div>
-            <span>Number of People</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span id=peopleError class=people-error>Can't be zero</span>
-          </div>
-          <input type=text id=peopleInput placeholder=0>
-        </div>
-      </div>
 
-      <div class="section section2">
-        <div class="tip-amount">
-          <div>
-            <span>Tip Amount</span> <br>
-            <span style="color: gray">/ person</span>
+        <div class="section section2">
+          <div class="tip-amount">
+            <div>
+              <span>Tip Amount</span> <br>
+              <span style="color: gray">/ person</span>
+            </div>
+            <input id=tipAmount placeholder=$0.00 readonly >
           </div>
-          <input id=tipAmount placeholder=$0.00 readonly >
-        </div>
 
-        <div class=tip-total>
-          <div>
-            <span>Total</span><br>
-            <span style="color: gray">/ person</span>
+          <div class=tip-total>
+            <div>
+              <span>Total</span><br>
+              <span style="color: gray">/ person</span>
+            </div>
+            <input id=tipTotal placeholder=$0.00 readonly >
           </div>
-          <input id=tipTotal placeholder=$0.00 readonly >
-        </div>
 
-        <div class="reset reset-inactive" id=reset>
-          <button>Reset</button>
+          <div class="reset reset-inactive" id=reset>
+            <button>Reset</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">James Daff</a>.
-  </div>
-</body>
-<script src="script.js"></script>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">James Daff</a>.
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
