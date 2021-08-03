@@ -82,6 +82,10 @@ input {
     .page-wrapper {
         justify-content: start;
     }
+
+    h1 {
+        visibility: hidden;
+    }
 }
 
 .section {
