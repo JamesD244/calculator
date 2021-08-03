@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop-Screenshot](/Completed Design/Desktop View.png)
-![Mobile-Screenshot](/Completed Design/Mobile View (Iphone X).png)
+![Desktop-Screenshot](/screenshots/desktop-view.png)
+![Mobile-Screenshot](/screenshots/mobile-view.png)
 
 ### Links
 
