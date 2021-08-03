@@ -16,58 +16,56 @@
     </style>
   </head>
   <body>
-
-    <div class=page-wrapper>
-      <div class=wrapper>
-        <div class="section section1">
-          <div class="bill">
-            <span>Bill</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span id=billError class=bill-error>Can't be zero</span>
-            <input id=billInput type=text placeholder=0>
-          </div>
-          <div class="tip flex">
-            <span>Select Tip %</span>
-            <div class=tip-amounts>
-              <button id=btn1>5%</button>
-              <button id=btn2>10%</button>
-              <button id=btn3>15%</button>
-              <button id=btn4>25%</button>
-              <button id=btn5>50%</button>
-              <input id=btn6 class=custom placeholder="Custom">
+    <main>
+      <div class=page-wrapper>
+        <div class=wrapper>
+          <div class="section section1">
+            <div class="bill">
+              <span>Bill</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <span id=billError class=bill-error>Can't be zero</span>
+              <input id=billInput type=text placeholder=0>
+            </div>
+            <div class="tip flex">
+              <span>Select Tip %</span>
+              <div class=tip-amounts>
+                <button id=btn1>5%</button>
+                <button id=btn2>10%</button>
+                <button id=btn3>15%</button>
+                <button id=btn4>25%</button>
+                <button id=btn5>50%</button>
+                <input id=btn6 class=custom placeholder="Custom">
+              </div>
+            </div>
+            <div class="people flex">
+              <div>
+                <span>Number of People</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <span id=peopleError class=people-error>Can't be zero</span>
+              </div>
+              <input type=text id=peopleInput placeholder=0>
             </div>
           </div>
-          <div class="people flex">
-            <div>
-              <span>Number of People</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-              <span id=peopleError class=people-error>Can't be zero</span>
+          <div class="section section2">
+            <div class="tip-amount">
+              <div>
+                <span>Tip Amount</span> <br>
+                <span style="color: gray">/ person</span>
+              </div>
+              <input id=tipAmount placeholder=$0.00 readonly >
             </div>
-            <input type=text id=peopleInput placeholder=0>
-          </div>
-        </div>
-
-        <div class="section section2">
-          <div class="tip-amount">
-            <div>
-              <span>Tip Amount</span> <br>
-              <span style="color: gray">/ person</span>
+            <div class=tip-total>
+              <div>
+                <span>Total</span><br>
+                <span style="color: gray">/ person</span>
+              </div>
+              <input id=tipTotal placeholder=$0.00 readonly >
             </div>
-            <input id=tipAmount placeholder=$0.00 readonly >
-          </div>
-
-          <div class=tip-total>
-            <div>
-              <span>Total</span><br>
-              <span style="color: gray">/ person</span>
+            <div class="reset reset-inactive" id=reset>
+              <button>Reset</button>
             </div>
-            <input id=tipTotal placeholder=$0.00 readonly >
-          </div>
-
-          <div class="reset reset-inactive" id=reset>
-            <button>Reset</button>
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
